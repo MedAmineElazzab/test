@@ -1,0 +1,16 @@
+{
+  "extends": ["@commitlint/config-conventional"],
+  "rules": {
+    "type-enum": [
+      2,
+      "always",
+      
+      ["ci", "chore", "docs", "ticket", "feat", "fix", "perf", "refactor", "revert", "style"]
+    ]
+  },
+  "messages": {
+    "type-empty": "✖   Please provide a commit type [type-empty]: ",
+    "subject-empty": "✖   Please provide a non-empty commit message subject [subject-empty]: ",
+    "type-enum": "✖   Please provide a valid commit type: ci, chore, docs, ticket, feat, fix, perf, refactor, revert, or style [type-enum]"
+  }
+}
