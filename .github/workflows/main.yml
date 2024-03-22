@@ -13,9 +13,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set output
-        id: vars
-        run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
@@ -25,6 +22,11 @@ jobs:
         with:
           username: elazzab
           password: ${{ secrets.DOCKER_PASSWORD }}
+          
+      # Store the tag in an environment file
+      - name: Store tag in environment file
+        run: echo "TAG=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+      
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
