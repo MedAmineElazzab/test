@@ -31,5 +31,7 @@ jobs:
           context: .
           platforms: linux/amd64, linux/arm64
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: |
+            your-docker-username/your-image-name:latest
+            your-docker-username/your-image-name:${{ steps.vars.outputs.tag }}
           labels: ${{ steps.meta.outputs.labels }}
