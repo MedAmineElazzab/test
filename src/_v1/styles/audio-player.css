@@ -1,0 +1,33 @@
+.audio-clip-btn.playing .circle-wave:nth-child(1) {
+  animation: waves 2.5s linear infinite;
+  animation-delay: 0s;
+}
+
+.audio-clip-btn.playing .circle-wave:nth-child(2) {
+  animation: waves 2.5s linear 0.7s forwards infinite;
+}
+
+.audio-clip-btn.playing .circle-wave:nth-child(3) {
+  animation: waves 2.5s linear 1.3s forwards infinite;
+}
+
+.audio-clip-btn.playing .circle-wave:nth-child(4) {
+  animation: waves 2.5s linear 1.9s forwards infinite;
+}
+.circle-wave {
+  position: absolute;
+  background: #fff;
+  transition: 3s ease;
+}
+
+@keyframes waves {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

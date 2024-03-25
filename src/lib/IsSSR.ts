@@ -1,0 +1,1 @@
+export const IsSSR = () => typeof window === "undefined";

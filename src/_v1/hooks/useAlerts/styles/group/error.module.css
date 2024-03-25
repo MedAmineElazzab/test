@@ -1,0 +1,22 @@
+.root {
+  background-color: #ffebee;
+  border: 1px solid #f44336;
+}
+.root::before {
+  background-color: white;
+}
+.description,
+.title {
+  color: #f44336;
+}
+.closeButton {
+  color: #f44336;
+}
+.icon {
+  width: 18px;
+  height: 18px;
+  color: #f44336;
+  background-color: transparent !important;
+  top: -7px;
+  position: relative;
+}

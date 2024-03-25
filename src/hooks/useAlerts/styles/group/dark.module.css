@@ -1,0 +1,48 @@
+.root {
+  background-color: #282c38;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: flex-start;
+  padding: 15px !important;
+}
+.root::before {
+  background-color: white;
+}
+.title {
+  color: #ffffff;
+  font-size: 17px;
+  /* margin-top: 15px; */
+  margin-bottom: 10px;
+}
+.description {
+  color: #cecece;
+}
+.body {
+  padding-right: 15px;
+}
+.closeButton {
+  color: #ffffff;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 30px;
+}
+.closeButton:hover {
+  background-color: #ffffff25 !important;
+}
+.closeButton svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+.icon {
+  width: 100%;
+  max-width: 50px;
+  min-height: 50px;
+  height: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
