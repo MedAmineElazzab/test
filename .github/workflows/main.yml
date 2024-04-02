@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - "V*.*.*"
+  workflow_dispatch:
 
 jobs:
   build:
@@ -29,3 +30,4 @@ jobs:
           registry: docker.io
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+          
