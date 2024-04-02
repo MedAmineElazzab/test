@@ -1,7 +1,0 @@
-export *  from  "./Comments"
-export *  from  "./SingleComment"
-export * from "./CommentsList"
-export * from "./LoadMoreComments"
-export * from "./Mycomment"
-export *  from "./SingleCommentEdit"
-export * from "./CommentActions"
